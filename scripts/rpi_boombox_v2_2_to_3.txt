@@ -1,0 +1,51 @@
+--- rpi_boombox_v2.py	(original)
++++ rpi_boombox_v2.py	(refactored)
+@@ -111,7 +111,7 @@
+         if self.this_cursor > len(self.current_cursors):
+            self.this_cursor = len(self.current_cursors)
+         
+-        for col, nbr in self.current_cursors.items():
++        for col, nbr in list(self.current_cursors.items()):
+             if nbr == self.this_cursor:
+                self.current_col = col
+         vfd.setCursor(self.current_col,0) 
+@@ -132,7 +132,8 @@
+             self._client.connect(self._host, self._port)
+ 
+         # Catch socket errors
+-        except IOError as (errno, strerror):
++        except IOError as xxx_todo_changeme:
++            (errno, strerror) = xxx_todo_changeme.args
+             raise PollerError("Could not connect to '%s': %s" %
+                               (self._host, strerror))
+ 
+@@ -326,7 +327,7 @@
+     mpd_info()  
+ 
+ def next():
+-    mpc.next()
++    mpc.__next__()
+     mpd_info()
+ 
+ def incr_vol():
+@@ -433,9 +434,9 @@
+                 # "fake" a key press
+                 vol_knob_chg = [{'repeat': 0, 'config': 'voldown'}]
+ 	elif event == RotaryEncoder.BUTTONDOWN:
+-		print "Button down"
++		print("Button down")
+ 	elif event == RotaryEncoder.BUTTONUP:
+-		print "Button up"
++		print("Button up")
+ 	return
+     
+ 
+@@ -500,7 +501,7 @@
+ 		try:
+ 			cmd=commands[press["config"]]
+ 		except KeyError:
+-                        print "getting KeyError"
++                        print("getting KeyError")
+ 			continue
+ 		try:
+ 			mpc.connect("localhost", 6600)
