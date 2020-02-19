@@ -73,7 +73,7 @@ state = 'play'   # play/pause; when paused, clears screen and does not refresh, 
 
 
 # API Weather Variables - change for your Key and location
-api_key = "2878ea4f28cdcfb2e5bfd4bf5ec46ed0" # Dark Sky API Key - Go to https://darksky.net/dev/ and sign up for a free API key
+api_key = "*******************************" # Dark Sky API Key - Go to https://darksky.net/dev/ and sign up for a free API key
 # Use http://www.latlong.net to get the following lat/lng values (required for API)
 lat = 37.961461
 lng = -122.087975
