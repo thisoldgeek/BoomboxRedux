@@ -3,6 +3,7 @@
 
 ## *Description:*
 A 0.25in black acrylic case, laser cut and etched to hold electronics for a boombox
+Updated from a 2014 build.
 
 See the posting at:
 TBA:
