@@ -7,8 +7,7 @@ Updated from a 2014 build.
 
 See the posting at:
 TBA:
-https://www.hackster.io/thisoldgeek/kinetic-courier
-
+https://www.hackster.io/thisoldgeek/Boombox Redux
 ## *Required Hardware:*
 * Enclosure/Frame - 18in x 24in sheet of 1/4in black cast acrylic, $45 at Tap Plastics
 * raspberry pi 3+
