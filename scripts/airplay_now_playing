@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /tmp/shairport-sync-metadata | shairport-sync-metadata-reader | /home/pi/BoomboxRedux/airplay_vfd.py

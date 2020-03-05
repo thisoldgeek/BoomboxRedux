@@ -1,0 +1,19 @@
+# sudo cp ~/BoomboxRedux/scripts/airplay_vfd_systemctl_service.txt /etc/systemd/system/airplay_vfd.service 
+# sudo chmod 644 /etc/systemd/system/airplay_vfd.service
+# sudo systemctl daemon-reload
+# sudo systemctl enable airplay_vfd
+# sudo systemctl restart airplay_vfd
+# 
+
+[Unit]
+Description=AirPlay Now Playing
+After=shairport-sync.target network-online.target multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/airplay_now_playing
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+DefaultDependencies=no  #overrides default late start in boot process
+After=local-fs.target
