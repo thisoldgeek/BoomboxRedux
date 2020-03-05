@@ -48,6 +48,7 @@ https://www.hackster.io/thisoldgeek/kinetic-courier
 * DarkSky API Key for weather information
 
 ## *More Information:*
+Original build was 2014. See the post at:http://thisoldgeek.blogspot.com/2014/06/back-in-black-diy-raspberry-pi-boombox.html
 TBA
 See the build log at hackster.io/thisoldgeek Boombox Redux
 
